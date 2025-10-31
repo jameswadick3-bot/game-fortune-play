@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TicketModal from "@/app/components/TicketModal";
+import TicketModal from "../components/TicketModal";
 
 const outcomes = [
   { name: "Home Win", color: "bg-green-500" },
