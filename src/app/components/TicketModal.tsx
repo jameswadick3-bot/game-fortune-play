@@ -5,9 +5,10 @@ interface TicketModalProps {
   open: boolean;
   onClose: () => void;
   onSuccess?: () => void;
+  gameName: string;
 }
 
-export default function TicketModal({ open, onClose, onSuccess }: TicketModalProps) {
+export default function TicketModal({ open, onClose, onSuccess, gameName }: TicketModalProps) {
   const [processing, setProcessing] = useState(false);
   const [success, setSuccess] = useState(false);
   const [ticketId, setTicketId] = useState('');
@@ -31,7 +32,7 @@ export default function TicketModal({ open, onClose, onSuccess }: TicketModalPro
         >
           &times;
         </button>
-        <h2 className="text-2xl font-bold mb-4 text-green-700">Buy Ticket</h2>
+        <h2 className="text-2xl font-bold mb-4 text-green-700">Buy Ticket for {gameName}</h2>
         {!processing && !success && (
           <>
             <p className="mb-4 text-gray-700">Ticket price: <span className="font-bold">₵5</span></p>

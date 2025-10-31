@@ -1,14 +1,19 @@
 'use client';
 import { useEffect, useState } from 'react';
 
+interface Game {
+  name: string;
+  // Add other properties if needed
+}
+
 export default function GamesPage() {
-  const [games, setGames] = useState([]);
+  const [games, setGames] = useState<Game[]>([]);
   const [error, setError] = useState('');
 
   useEffect(() => {
     fetch('http://localhost:5000/api/games')
       .then((res) => res.json())
-      .then((data) => setGames(data))
+      .then((data) => setGames(data as Game[]))
       .catch((err) => setError(err.message));
   }, []);
 
