@@ -1,4 +1,4 @@
-{
+ brew services start mongodb-community{
   "name": "fortuna-backend",
   "version": "1.0.0",
   "main": "index.js",

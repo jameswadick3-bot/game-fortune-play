@@ -1,0 +1,38 @@
+/* Fortuna Play Custom Theme */
+body {
+  background: #000;
+  color: #FFD700;
+}
+
+a {
+  color: #FFD700;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #ff0000;
+}
+
+.bg-red-600 {
+  background-color: #ff0000 !important;
+}
+.bg-yellow-400 {
+  background-color: #FFD700 !important;
+}
+.bg-green-600 {
+  background-color: #008000 !important;
+}
+.bg-black {
+  background-color: #000 !important;
+}
+.text-yellow-400 {
+  color: #FFD700 !important;
+}
+.text-green-500 {
+  color: #008000 !important;
+}
+.text-red-600 {
+  color: #ff0000 !important;
+}
+.text-black {
+  color: #000 !important;
+}
