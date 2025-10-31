@@ -1,0 +1,14 @@
+export default function Home() {
+  return (
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold mb-4">Welcome to Fortuna Play!</h1>
+      <p className="text-lg text-gray-700 mb-8">
+        Your gaming platform is ready. Start building your features!
+      </p>
+      <div className="bg-white p-6 rounded shadow">
+        <span className="text-green-600 font-semibold">Frontend and backend are running!</span>
+      </div>
+    </main>
+  );
+}
+x
